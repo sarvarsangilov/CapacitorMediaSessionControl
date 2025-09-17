@@ -11,6 +11,9 @@ Provides advanced integration with lock screen controls, notification controls, 
 * Integration with Android notifications (media style)
 * Reacts to hardware media buttons (headphones, Bluetooth, etc.)
 
+## Demo
+* [Link to demo](https://github.com/sarvarsangilov/mucisplayer)
+
 ## Install
 
 ```bash
