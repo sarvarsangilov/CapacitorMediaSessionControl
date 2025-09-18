@@ -116,7 +116,7 @@ public class MediaSessionService extends Service {
                     isPlaying = false;
                     position = 0L;
                     updateState();
-                    MediaSessionControlPlugin.sendEvent("stop", position);
+                    // MediaSessionControlPlugin.sendEvent("stop", position);
                     // Не отправляем notificationDismissed здесь, это будет в ACTION_DISMISS
                 }
 }
@@ -172,7 +172,8 @@ public class MediaSessionService extends Service {
                 break;
             case ACTION_STOP: 
                 isInternalCall = true;
-                mediaSession.getController().getTransportControls().stop();
+                stopSelf();
+                // mediaSession.getController().getTransportControls().stop();
                 isInternalCall = false;
                 break;
             case ACTION_NEXT: 

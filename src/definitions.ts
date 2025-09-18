@@ -54,52 +54,52 @@ export interface MediaSessionEventPayload {
 
 export interface MediaSessionControlPlugin {
   /**
-   * Инициализация MediaSession и уведомления
+   * Init Media Session API and notification
    */
   init(options: InitOptions): Promise<void>;
 
   /**
-   * Запуск воспроизведения
+   * Start playback
    */
   play(): Promise<void>;
 
   /**
-   * Пауза воспроизведения
+   * Pause playback
    */
   pause(): Promise<void>;
 
   /**
-   * Остановка воспроизведения
+   * Stop playback and remove notification
    */
   stop(): Promise<void>;
 
   /**
-   * Следующий трек
+   * Next track
    */
   next(): Promise<void>;
 
   /**
-   * Предыдущий трек
+   * Previous track
    */
   previous(): Promise<void>;
 
   /**
-   * Перемотка на указанную позицию
+   * Seek to position
    */
   seekTo(options: SeekToOptions): Promise<void>;
 
   /**
-   * Обновление метаданных трека
+   * Update metadata (title, artist, album, cover, duration)
    */
   updateMetadata(options: UpdateMetadataOptions): Promise<void>;
 
   /**
-   * Обновление состояния воспроизведения
+   * Update playback state (state, position, playbackSpeed)
    */
   updatePlaybackState(options: UpdatePlaybackStateOptions): Promise<void>;
 
   /**
-   * Подписка на события из MediaSession
+   * Add listener for media session events
    */
   addListener(
     eventName: "mediaSessionEvent",
