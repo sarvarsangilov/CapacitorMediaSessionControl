@@ -49,7 +49,7 @@ npx cap sync
 init(options: InitOptions) => Promise<void>
 ```
 
-Инициализация MediaSession и уведомления
+Init Media Session API and notification
 
 | Param         | Type                                                |
 | ------------- | --------------------------------------------------- |
@@ -64,7 +64,7 @@ init(options: InitOptions) => Promise<void>
 play() => Promise<void>
 ```
 
-Запуск воспроизведения
+Start playback
 
 --------------------
 
@@ -75,7 +75,7 @@ play() => Promise<void>
 pause() => Promise<void>
 ```
 
-Пауза воспроизведения
+Pause playback
 
 --------------------
 
@@ -86,7 +86,7 @@ pause() => Promise<void>
 stop() => Promise<void>
 ```
 
-Остановка воспроизведения
+Stop playback and remove notification
 
 --------------------
 
@@ -97,7 +97,7 @@ stop() => Promise<void>
 next() => Promise<void>
 ```
 
-Следующий трек
+Next track
 
 --------------------
 
@@ -108,7 +108,7 @@ next() => Promise<void>
 previous() => Promise<void>
 ```
 
-Предыдущий трек
+Previous track
 
 --------------------
 
@@ -119,7 +119,7 @@ previous() => Promise<void>
 seekTo(options: SeekToOptions) => Promise<void>
 ```
 
-Перемотка на указанную позицию
+Seek to position
 
 | Param         | Type                                                    |
 | ------------- | ------------------------------------------------------- |
@@ -134,7 +134,7 @@ seekTo(options: SeekToOptions) => Promise<void>
 updateMetadata(options: UpdateMetadataOptions) => Promise<void>
 ```
 
-Обновление метаданных трека
+Update metadata (title, artist, album, cover, duration)
 
 | Param         | Type                                                                    |
 | ------------- | ----------------------------------------------------------------------- |
@@ -149,7 +149,7 @@ updateMetadata(options: UpdateMetadataOptions) => Promise<void>
 updatePlaybackState(options: UpdatePlaybackStateOptions) => Promise<void>
 ```
 
-Обновление состояния воспроизведения
+Update playback state (state, position, playbackSpeed)
 
 | Param         | Type                                                                              |
 | ------------- | --------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ updatePlaybackState(options: UpdatePlaybackStateOptions) => Promise<void>
 addListener(eventName: "mediaSessionEvent", listenerFunc: (event: MediaSessionEventPayload) => void) => Promise<{ remove: () => void; }>
 ```
 
-Подписка на события из MediaSession
+Add listener for media session events
 
 | Param              | Type                                                                                              |
 | ------------------ | ------------------------------------------------------------------------------------------------- |
