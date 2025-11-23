@@ -12,6 +12,7 @@ Provides advanced integration with lock screen controls, notification controls, 
 * Reacts to hardware media buttons (headphones, Bluetooth, etc.)
 
 ## Demo
+
 * [Link to demo ](https://github.com/sarvarsangilov/mucisplayer)
 
 ## Install
@@ -19,6 +20,17 @@ Provides advanced integration with lock screen controls, notification controls, 
 ```bash
 npm install capacitor-media-session-control
 npx cap sync
+```
+
+## Config for IOS
+
+Add this code to: `ios/App/App/Info.plist`
+
+```
+<key>UIBackgroundModes</key>
+<array>
+    <string>audio</string>
+</array>
 ```
 
 ## API
