@@ -3,7 +3,7 @@ import { WebPlugin } from '@capacitor/core';
 import type { MediaSessionControlPlugin } from './definitions';
 
 export class MediaSessionControlWeb extends WebPlugin implements MediaSessionControlPlugin {
-  async init(): Promise<void> {
+  async initMediaSession(): Promise<void> {
     console.log('MediaSessionControl not supported on web');
   }
 

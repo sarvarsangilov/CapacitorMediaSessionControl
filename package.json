@@ -1,6 +1,6 @@
 {
   "name": "capacitor-media-session-control",
-  "version": "1.1.0",
+  "version": "1.1.8",
   "description": "Capacitor plugin for controlling media playback via Android MediaSession API. Provides advanced integration with lock screen controls, notification controls, and hardware media buttons.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

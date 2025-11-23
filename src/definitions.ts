@@ -56,7 +56,7 @@ export interface MediaSessionControlPlugin {
   /**
    * Init Media Session API and notification
    */
-  init(options: InitOptions): Promise<void>;
+  initMediaSession(options: InitOptions): Promise<void>;
 
   /**
    * Start playback

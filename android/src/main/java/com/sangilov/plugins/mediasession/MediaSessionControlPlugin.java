@@ -71,7 +71,7 @@ public class MediaSessionControlPlugin extends Plugin {
     }
 
     @PluginMethod
-    public void init(PluginCall call) {
+    public void initMediaSession(PluginCall call) {
         String title = call.getString("title", "");
         String artist = call.getString("artist", "");
         String album = call.getString("album", "");
