@@ -37,7 +37,7 @@ Add this code to: `ios/App/App/Info.plist`
 
 <docgen-index>
 
-* [`init(...)`](#init)
+* [`initMediaSession(...)`](#initmediasession)
 * [`play()`](#play)
 * [`pause()`](#pause)
 * [`stop()`](#stop)
@@ -55,10 +55,10 @@ Add this code to: `ios/App/App/Info.plist`
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### init(...)
+### initMediaSession(...)
 
 ```typescript
-init(options: InitOptions) => Promise<void>
+initMediaSession(options: InitOptions) => Promise<void>
 ```
 
 Init Media Session API and notification
