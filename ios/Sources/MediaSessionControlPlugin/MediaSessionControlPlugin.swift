@@ -3,7 +3,7 @@ import Foundation
 import Capacitor
 
 @objc(MediaSessionControlPlugin)
-public class MediaSessionControlPlugin: CAPPlugin {
+public class MediaSessionControlPlugin: CAPPlugin, CAPBridgedPlugin {
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "initMediaSession", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "play", returnType: CAPPluginReturnPromise),
